@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#000000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ====== Common ====== */
+a {
+    text-decoration: none;
+}
+.content {
+    /* width: 1510px; */
+    width: calc(100% - 258px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== MAIN ===== */
+.main {
+    display: flex;
+}
+/* ===== SIDEBAR ===== */
+.side-bar {
+    background-color: #191718;
+    min-width: 150px;
+    height: auto;
+}
+
+.nav-item {
+    padding: 14px 11px 16px;
+    border-bottom: 1px solid #5C5C5C;
+}
+
+.nav-item:hover {
+    background-color: #5C5C5C;
+}
+
+.nav-item:hover .nav-link {
+    color: #FFFFFF;
+}
+.nav-link {
+    color: #AAAAAA;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    color: #FFFFFF;
+}
+
+/* ====== HEADER ====== */
+.header {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.header .logo {
+    width: 310px;
+}
+
+/* ====== DESCRIPTION ====== */
+.description {
+    padding: 38px 0;
+    background-color: #EFEFEF;
+    text-align: center;
+}
+
+.description .title {
+    padding-bottom: 18px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.description .text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    max-width: 972px;
+    margin: auto;
+}
+
+/* ====== INFO ====== */
+.info {
+    margin-top: 40px;
+    padding-bottom: 183px;
+}
+.info-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.info-item__img {
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+    margin-bottom: 6px;
+}
+
+.info-item__img img {
+    object-fit: cover;
+}
+
+.info-item__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    width: max-content;
+    padding-bottom: 18px;
+}
+
+.info-item__desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid #DEDEDE;
+}
+
+.footer span {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
