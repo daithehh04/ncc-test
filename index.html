@@ -9,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FONTS AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- RESET CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>NCC</title>
 </head>
 
@@ -39,8 +45,33 @@
                 </ul>
             </nav>
         </section>
+
+        <input type="checkbox" hidden name="" id="nav-input" class="nav-input">
+        <section class="side-bar side-bar__active">
+            <label class="icon-close" for="nav-input"><i class="fa-sharp fa-solid fa-arrow-left"></i></label>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
         <section class="container">
             <div class="content">
+                <label class="icon-open" for="nav-input"><i class="fa-solid fa-bars"></i></label>
                 <header class="header">
                     <img src="./assets/images/logoNCC 1.svg" alt="ncc-logo" class="logo">
                 </header>
