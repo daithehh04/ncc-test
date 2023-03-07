@@ -43,7 +43,9 @@ a {
     left: 0;
     bottom: 0;
     width: 100%;
-    display: none;
+    background-color: #191718;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
 }
 
 .side-bar__active .icon-close {
@@ -89,7 +91,7 @@ a {
     display: none;
 }
 .nav-input:checked ~ .side-bar__active {
-    display: block;
+    transform: translateX(0);
 }
 
 /* ====== HEADER ====== */
